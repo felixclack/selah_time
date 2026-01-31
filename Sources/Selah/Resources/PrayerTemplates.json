@@ -1,0 +1,452 @@
+[
+  {
+    "id": "grateful-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "prayer": "Lord, in my grateful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "O give thanks unto the Lord; for he is good. \u2014 Psalm 118:1",
+    "translation": "KJV"
+  },
+  {
+    "id": "grateful-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "prayer": "Lord, in my grateful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "O give thanks unto the Lord; for he is good. \u2014 Psalm 118:1",
+    "translation": "KJV"
+  },
+  {
+    "id": "grateful-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "prayer": "Lord, in my grateful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "O give thanks unto the Lord; for he is good. \u2014 Psalm 118:1",
+    "translation": "KJV"
+  },
+  {
+    "id": "grateful-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "prayer": "Lord, in my grateful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "O give thanks unto the Lord; for he is good. \u2014 Psalm 118:1",
+    "translation": "KJV"
+  },
+  {
+    "id": "grateful-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "grateful"
+    ],
+    "prayer": "Lord, in my grateful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "O give thanks unto the Lord; for he is good. \u2014 Psalm 118:1",
+    "translation": "KJV"
+  },
+  {
+    "id": "anxious-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "prayer": "Lord, in my anxious I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Cast thy burden upon the Lord, and he shall sustain thee. \u2014 Psalm 55:22",
+    "translation": "KJV"
+  },
+  {
+    "id": "anxious-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "prayer": "Lord, in my anxious I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Cast thy burden upon the Lord, and he shall sustain thee. \u2014 Psalm 55:22",
+    "translation": "KJV"
+  },
+  {
+    "id": "anxious-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "prayer": "Lord, in my anxious I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Cast thy burden upon the Lord, and he shall sustain thee. \u2014 Psalm 55:22",
+    "translation": "KJV"
+  },
+  {
+    "id": "anxious-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "prayer": "Lord, in my anxious I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Cast thy burden upon the Lord, and he shall sustain thee. \u2014 Psalm 55:22",
+    "translation": "KJV"
+  },
+  {
+    "id": "anxious-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "anxious"
+    ],
+    "prayer": "Lord, in my anxious I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Cast thy burden upon the Lord, and he shall sustain thee. \u2014 Psalm 55:22",
+    "translation": "KJV"
+  },
+  {
+    "id": "distracted-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "distracted"
+    ],
+    "prayer": "Lord, in my distracted I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Be still, and know that I am God. \u2014 Psalm 46:10",
+    "translation": "KJV"
+  },
+  {
+    "id": "distracted-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "distracted"
+    ],
+    "prayer": "Lord, in my distracted I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Be still, and know that I am God. \u2014 Psalm 46:10",
+    "translation": "KJV"
+  },
+  {
+    "id": "distracted-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "distracted"
+    ],
+    "prayer": "Lord, in my distracted I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Be still, and know that I am God. \u2014 Psalm 46:10",
+    "translation": "KJV"
+  },
+  {
+    "id": "distracted-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "distracted"
+    ],
+    "prayer": "Lord, in my distracted I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Be still, and know that I am God. \u2014 Psalm 46:10",
+    "translation": "KJV"
+  },
+  {
+    "id": "distracted-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "distracted"
+    ],
+    "prayer": "Lord, in my distracted I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Be still, and know that I am God. \u2014 Psalm 46:10",
+    "translation": "KJV"
+  },
+  {
+    "id": "tired-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "tired"
+    ],
+    "prayer": "Lord, in my tired I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "He giveth power to the faint; and to them that have no might he increaseth strength. \u2014 Isaiah 40:29",
+    "translation": "KJV"
+  },
+  {
+    "id": "tired-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "tired"
+    ],
+    "prayer": "Lord, in my tired I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "He giveth power to the faint; and to them that have no might he increaseth strength. \u2014 Isaiah 40:29",
+    "translation": "KJV"
+  },
+  {
+    "id": "tired-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "tired"
+    ],
+    "prayer": "Lord, in my tired I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "He giveth power to the faint; and to them that have no might he increaseth strength. \u2014 Isaiah 40:29",
+    "translation": "KJV"
+  },
+  {
+    "id": "tired-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "tired"
+    ],
+    "prayer": "Lord, in my tired I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "He giveth power to the faint; and to them that have no might he increaseth strength. \u2014 Isaiah 40:29",
+    "translation": "KJV"
+  },
+  {
+    "id": "tired-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "tired"
+    ],
+    "prayer": "Lord, in my tired I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "He giveth power to the faint; and to them that have no might he increaseth strength. \u2014 Isaiah 40:29",
+    "translation": "KJV"
+  },
+  {
+    "id": "seeking-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "seeking"
+    ],
+    "prayer": "Lord, in my seeking I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Seek ye the Lord while he may be found. \u2014 Isaiah 55:6",
+    "translation": "KJV"
+  },
+  {
+    "id": "seeking-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "seeking"
+    ],
+    "prayer": "Lord, in my seeking I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Seek ye the Lord while he may be found. \u2014 Isaiah 55:6",
+    "translation": "KJV"
+  },
+  {
+    "id": "seeking-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "seeking"
+    ],
+    "prayer": "Lord, in my seeking I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Seek ye the Lord while he may be found. \u2014 Isaiah 55:6",
+    "translation": "KJV"
+  },
+  {
+    "id": "seeking-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "seeking"
+    ],
+    "prayer": "Lord, in my seeking I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Seek ye the Lord while he may be found. \u2014 Isaiah 55:6",
+    "translation": "KJV"
+  },
+  {
+    "id": "seeking-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "seeking"
+    ],
+    "prayer": "Lord, in my seeking I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "Seek ye the Lord while he may be found. \u2014 Isaiah 55:6",
+    "translation": "KJV"
+  },
+  {
+    "id": "joyful-evangelical-pastoral-01",
+    "tradition": [
+      "evangelical"
+    ],
+    "vibe": [
+      "pastoral"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "prayer": "Lord, in my joyful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "This is the day which the Lord hath made; we will rejoice and be glad in it. \u2014 Psalm 118:24",
+    "translation": "KJV"
+  },
+  {
+    "id": "joyful-catholic-liturgical-02",
+    "tradition": [
+      "catholic"
+    ],
+    "vibe": [
+      "liturgical"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "prayer": "Lord, in my joyful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "This is the day which the Lord hath made; we will rejoice and be glad in it. \u2014 Psalm 118:24",
+    "translation": "KJV"
+  },
+  {
+    "id": "joyful-orthodox-contemplative-03",
+    "tradition": [
+      "orthodox"
+    ],
+    "vibe": [
+      "contemplative"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "prayer": "Lord, in my joyful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "This is the day which the Lord hath made; we will rejoice and be glad in it. \u2014 Psalm 118:24",
+    "translation": "KJV"
+  },
+  {
+    "id": "joyful-mainlineprotestant-practical-04",
+    "tradition": [
+      "mainlineprotestant"
+    ],
+    "vibe": [
+      "practical"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "prayer": "Lord, in my joyful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "This is the day which the Lord hath made; we will rejoice and be glad in it. \u2014 Psalm 118:24",
+    "translation": "KJV"
+  },
+  {
+    "id": "joyful-universal-universal-05",
+    "tradition": [
+      "universal"
+    ],
+    "vibe": [
+      "universal"
+    ],
+    "moods": [
+      "joyful"
+    ],
+    "prayer": "Lord, in my joyful I come to you. Center my heart and help me to pause with you in this moment. Guide me to walk with you as I continue.",
+    "verse": "This is the day which the Lord hath made; we will rejoice and be glad in it. \u2014 Psalm 118:24",
+    "translation": "KJV"
+  }
+]

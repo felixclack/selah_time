@@ -1,0 +1,10 @@
+.DS_Store
+
+# fastlane
+fastlane/build
+fastlane/report.xml
+fastlane/test_output
+
+# Xcode
+DerivedData
+*.xcresult

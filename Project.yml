@@ -1,0 +1,128 @@
+name: Selah
+options:
+  bundleIdPrefix: com.goodstack
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 0.1.0
+
+schemes:
+  Selah:
+    build:
+      targets:
+        Selah: all
+        SelahShieldExtension: all
+        SelahDeviceActivityExtension: all
+    test:
+      targets:
+        - SelahTests
+  SelahSim:
+    build:
+      targets:
+        SelahSim: all
+    test:
+      targets:
+        - SelahTests
+
+targets:
+  Selah:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/Selah
+      - path: Sources/Shared
+    resources:
+      - path: Sources/Selah/Resources
+    entitlements:
+      path: Selah.entitlements
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleDisplayName: Selah Time
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - selah
+        NSFaceIDUsageDescription: "Selah does not use Face ID."
+    dependencies:
+      - target: SelahShieldExtension
+      - target: SelahDeviceActivityExtension
+
+  SelahSim:
+    type: application
+    platform: iOS
+    bundleId: com.goodstack.SelahSim
+    sources:
+      - path: Sources/Selah
+      - path: Sources/Shared
+    resources:
+      - path: Sources/Selah/Resources
+    info:
+      path: Config/InfoSim.plist
+      properties:
+        CFBundleDisplayName: Selah Time Sim
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - selah
+        NSFaceIDUsageDescription: "Selah does not use Face ID."
+
+  SelahShieldExtension:
+    type: app-extension
+    platform: iOS
+    bundleId: com.goodstack.Selah.ShieldExtension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.goodstack.Selah.ShieldExtension
+    sources:
+      - path: Sources/SelahShieldExtension
+      - path: Sources/Shared
+    entitlements:
+      path: SelahShieldExtension.entitlements
+    info:
+      path: Sources/SelahShieldExtension/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.familycontrols.shield-configuration
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension
+
+  SelahDeviceActivityExtension:
+    type: app-extension
+    platform: iOS
+    bundleId: com.goodstack.Selah.DeviceActivityExtension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.goodstack.Selah.DeviceActivityExtension
+    sources:
+      - path: Sources/SelahDeviceActivityExtension
+      - path: Sources/Shared
+    entitlements:
+      path: SelahDeviceActivityExtension.entitlements
+    info:
+      path: Sources/SelahDeviceActivityExtension/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity-monitor
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).DeviceActivityMonitorExtension
+
+  SelahTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/SelahTests
+    resources:
+      - path: Sources/Selah/Resources/PrayerTemplates.json
+    info:
+      path: Tests/SelahTests/Info.plist
+    settings:
+      base:
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/SelahSim.app/SelahSim"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+    dependencies:
+      - target: SelahSim

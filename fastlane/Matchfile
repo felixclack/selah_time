@@ -1,0 +1,16 @@
+storage_mode("git")
+git_url(ENV["MATCH_GIT_URL"])
+
+type(ENV["MATCH_TYPE"] || "appstore")
+
+app_identifier(
+  (ENV["APP_IDENTIFIERS"] && !ENV["APP_IDENTIFIERS"].empty?) ?
+    ENV["APP_IDENTIFIERS"].split(",").map(&:strip) :
+    [
+      ENV["APP_IDENTIFIER"] || "com.goodstack.Selah",
+      "com.goodstack.Selah.ShieldExtension",
+      "com.goodstack.Selah.DeviceActivityExtension"
+    ]
+)
+
+readonly(ENV["MATCH_READONLY"] == "1")

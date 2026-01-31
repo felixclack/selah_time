@@ -1,0 +1,4 @@
+app_identifier(ENV["APP_IDENTIFIER"] || "com.goodstack.Selah")
+team_id(ENV["APPLE_TEAM_ID"]) if ENV["APPLE_TEAM_ID"]
+# fastlane expects these via env for CI/non-interactive auth
+# ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_PATH (App Store Connect API key)
