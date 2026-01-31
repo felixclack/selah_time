@@ -31,6 +31,14 @@ Create the App Store Connect app record
 
 Enable Screen Time (Family Controls) entitlement on app and extensions
 
+### ios register_app_group
+
+```sh
+[bundle exec] fastlane ios register_app_group
+```
+
+Create and associate App Group for app + extensions, and enable App Groups capability
+
 ### ios tests
 
 ```sh
