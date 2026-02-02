@@ -5,164 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Selah Time is a gentle Screen Time companion that helps you create space, focus with intention, and end your day with calm."
+      content="Selah Time is a Screen Time companion that creates space for prayer, focus, and calm in a noisy digital life."
     />
     <title>Selah Time</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700&family=Newsreader:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Lexend:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
-    <div class="glow glow-left" aria-hidden="true"></div>
-    <div class="glow glow-right" aria-hidden="true"></div>
+    <div class="halo halo-1" aria-hidden="true"></div>
+    <div class="halo halo-2" aria-hidden="true"></div>
 
     <header class="site-header">
       <div class="logo">Selah Time</div>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#features">Features</a>
+        <a href="#story">Why Selah</a>
+        <a href="#rituals">Rituals</a>
         <a href="#how">How it works</a>
-        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
         <a href="#cta" class="nav-cta">Join TestFlight</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="story">
         <div class="hero-copy">
-          <p class="kicker reveal">Quiet momentum for a noisy day</p>
-          <h1 class="reveal">Make space for what matters, without the guilt trip.</h1>
+          <p class="eyebrow reveal">A digital sabbath for modern phones</p>
+          <h1 class="reveal">Your phone is loud. Selah makes it quiet.</h1>
           <p class="lead reveal">
-            Selah Time pairs gentle Screen Time controls with a warm, playful experience. Set
-            intention, stay aware, and end your day with a soft landing.
+            Selah Time uses Screen Time to turn distracting apps into gentle invitations to
+            pause, pray, and refocus. It is simple, reverent, and designed for calm.
           </p>
           <div class="hero-actions reveal">
             <a class="button primary" href="#cta">Join TestFlight</a>
-            <a class="button ghost" href="#how">See how it works</a>
+            <a class="button ghost" href="#how">See the rhythm</a>
           </div>
           <div class="hero-meta reveal">
-            <span>Built on Apple Screen Time</span>
-            <span>On-device, private by design</span>
+            <span>Screen Time powered</span>
+            <span>Private and on-device</span>
+            <span>No login required</span>
           </div>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit-1"></div>
-          <div class="orbit orbit-2"></div>
-          <div class="device">
-            <div class="device-header">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="sunburst"></div>
+          <div class="panel panel-main">
+            <div class="panel-header">
+              <span class="pill">Morning Selah</span>
+              <span class="time">06:45 AM</span>
             </div>
-            <div class="device-content">
-              <div class="device-title">Selah Time</div>
-              <div class="device-pill">Focus Window - 45 min</div>
-              <div class="device-card">
-                <p class="label">Today</p>
-                <p class="value">2h 18m</p>
-                <p class="sub">Mindful usage</p>
+            <div class="panel-body">
+              <p class="panel-title">Breathe. Pray. Begin.</p>
+              <div class="panel-row">
+                <span>Apps paused</span>
+                <strong>6</strong>
               </div>
-              <div class="device-card alt">
-                <p class="label">Next pause</p>
-                <p class="value">3:20 PM</p>
-                <p class="sub">Gentle nudge</p>
+              <div class="panel-row muted">
+                <span>Quiet window</span>
+                <strong>30 min</strong>
               </div>
             </div>
           </div>
-          <div class="floating-card">Breathe in - Breathe out</div>
+          <div class="panel panel-note">
+            <p>"Be still, and know."</p>
+            <span>Daily reminder</span>
+          </div>
+          <div class="panel panel-stack">
+            <div class="stack-top">Selah Locks</div>
+            <div class="stack-list">
+              <span>Social</span>
+              <span>News</span>
+              <span>Games</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="band" id="features">
+      <section class="metrics">
+        <div class="metric reveal">
+          <span class="metric-value">3 min</span>
+          <p>to set a daily rhythm</p>
+        </div>
+        <div class="metric reveal">
+          <span class="metric-value">1 tap</span>
+          <p>to pause distractions</p>
+        </div>
+        <div class="metric reveal">
+          <span class="metric-value">0 data</span>
+          <p>sent off your device</p>
+        </div>
+      </section>
+
+      <section class="band" id="rituals">
         <div class="section-head reveal">
-          <h2>Designed for calm, built for action</h2>
+          <h2>Rituals that reset your day</h2>
           <p>
-            Selah Time balances play and discipline, so you can choose your pace without
-            feeling boxed in.
+            Selah Time is built around gentle, repeatable practices. Each one creates a small
+            pocket of quiet in the middle of a busy life.
           </p>
         </div>
-        <div class="card-grid">
-          <article class="info-card reveal">
-            <h3>Focus Windows</h3>
-            <p>Schedule gentle boundaries that keep you present while you work, rest, or reset.</p>
+        <div class="ritual-grid">
+          <article class="ritual-card reveal">
+            <h3>Selah Windows</h3>
+            <p>Schedule sacred pauses when your phone shifts from noise to stillness.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Warm Nudges</h3>
-            <p>Subtle notifications that feel like a friend, not a scolding timer.</p>
+          <article class="ritual-card reveal">
+            <h3>Prayer Locks</h3>
+            <p>Choose the apps that need a pause before you step into them.</p>
           </article>
-          <article class="info-card reveal">
-            <h3>Evening Wind-Down</h3>
-            <p>Ease into a calmer night with reflections, quiet prompts, and sleep-friendly cues.</p>
+          <article class="ritual-card reveal">
+            <h3>Gentle Reminders</h3>
+            <p>Soft nudges that feel like a friend, not a scolding notification.</p>
           </article>
         </div>
       </section>
 
-      <section class="band flow" id="how">
+      <section class="band story" id="how">
         <div class="section-head reveal">
           <h2>How it works</h2>
-          <p>Three small moments that gently reshape your day.</p>
+          <p>Three steps to build a quieter digital life.</p>
         </div>
         <div class="steps">
           <div class="step reveal">
-            <div class="step-number">01</div>
+            <div class="step-index">01</div>
             <div>
-              <h4>Set an intention</h4>
-              <p>Choose your focus window or rest block. Selah handles the timing.</p>
+              <h4>Select your noisy apps</h4>
+              <p>Pick the apps that pull you away from focus or prayer.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step-number">02</div>
+            <div class="step-index">02</div>
             <div>
-              <h4>Stay gently aware</h4>
-              <p>Managed Settings keeps distractions in check with a soft touch.</p>
+              <h4>Set a Selah window</h4>
+              <p>Choose a time of day for a gentle pause and reset.</p>
             </div>
           </div>
           <div class="step reveal">
-            <div class="step-number">03</div>
+            <div class="step-index">03</div>
             <div>
-              <h4>Reflect, don't regret</h4>
-              <p>Get a simple daily recap that celebrates progress, not perfection.</p>
+              <h4>Unlock with intention</h4>
+              <p>Return to your phone with a clear mind and a calmer heart.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="band privacy" id="privacy">
-        <div class="section-head reveal">
-          <h2>Private by design</h2>
+      <section class="band split">
+        <div class="split-copy reveal">
+          <h2>Quiet by design</h2>
           <p>
-            Selah Time uses Apple's Screen Time APIs to manage focus and activity. Your
-            data stays on device.
+            Selah Time is built on Apple Screen Time APIs so your device stays yours. Your data
+            stays on device, and nothing is shared or sold.
           </p>
+          <ul class="checklist">
+            <li>On-device focus controls</li>
+            <li>No accounts or logins</li>
+            <li>Transparency first</li>
+          </ul>
         </div>
-        <div class="privacy-grid">
-          <div class="privacy-card reveal">
-            <h4>On-device processing</h4>
-            <p>No usage data is sent to servers. Your rhythms stay with you.</p>
+        <div class="split-card reveal">
+          <p class="quote">"I wanted an app that invites prayer without adding noise."</p>
+          <span class="quote-name">Selah Time beta user</span>
+        </div>
+      </section>
+
+      <section class="band faq" id="faq">
+        <div class="section-head reveal">
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item reveal">
+            <h4>Does it replace Screen Time?</h4>
+            <p>No. Selah Time works with Screen Time to create intentional pauses.</p>
           </div>
-          <div class="privacy-card reveal">
-            <h4>Transparent controls</h4>
-            <p>You choose the limits, schedules, and reminders. Selah just keeps time.</p>
+          <div class="faq-item reveal">
+            <h4>Is it only for prayer?</h4>
+            <p>It is built with prayer in mind, but any quiet practice fits.</p>
           </div>
-          <div class="privacy-card reveal">
-            <h4>Family-ready</h4>
-            <p>Supports Screen Time & Family Controls entitlements for trusted setups.</p>
+          <div class="faq-item reveal">
+            <h4>Do you store my data?</h4>
+            <p>No. Selah Time keeps everything on device.</p>
           </div>
         </div>
       </section>
 
       <section class="cta" id="cta">
-        <div class="cta-inner reveal">
-          <h2>Ready for a softer pace?</h2>
-          <p>Join the TestFlight to shape Selah Time before launch.</p>
+        <div class="cta-card reveal">
+          <h2>Ready to reclaim your attention?</h2>
+          <p>Join the TestFlight and help shape Selah Time before launch.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#">Request an invite</a>
-            <a class="button ghost" href="#features">Explore features</a>
+            <a class="button primary" href="mailto:felixclack@gmail.com?subject=Selah%20Time%20TestFlight">Request an invite</a>
+            <a class="button ghost" href="#story">Read the story</a>
           </div>
         </div>
       </section>
@@ -171,12 +209,12 @@
     <footer class="site-footer">
       <div>
         <div class="logo">Selah Time</div>
-        <p class="footer-note">A gentle Screen Time companion built by Felix Clack.</p>
+        <p class="footer-note">A marketing page for the Selah Time Screen Time app.</p>
       </div>
       <div class="footer-links">
         <a href="mailto:felixclack@gmail.com">Contact</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#story">Why Selah</a>
       </div>
     </footer>
 

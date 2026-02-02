@@ -11,6 +11,7 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el, index) => {
-  el.style.transitionDelay = `${index * 60}ms`;
+  const delay = (index % 6) * 80;
+  el.style.transitionDelay = `${delay}ms`;
   observer.observe(el);
 });

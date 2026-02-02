@@ -1,17 +1,15 @@
 :root {
   color-scheme: only light;
-  --ink: #1c1a1c;
-  --ink-soft: #44373b;
-  --paper: #fff7ef;
-  --paper-strong: #fff1e1;
-  --sun: #ffd08a;
-  --coral: #ff7a59;
-  --mint: #63d6c0;
-  --sage: #3b6b61;
-  --rose: #ffb2a4;
-  --shadow: rgba(19, 11, 20, 0.18);
-  --glass: rgba(255, 255, 255, 0.65);
-  --max-width: 1100px;
+  --ink: #1f140e;
+  --ink-soft: #3f2f26;
+  --paper: #f8f2ea;
+  --paper-deep: #efe2d3;
+  --clay: #c76b4f;
+  --olive: #2f564f;
+  --gold: #e6b66a;
+  --shadow: rgba(21, 12, 8, 0.12);
+  --radius: 26px;
+  --max-width: 1120px;
 }
 
 * {
@@ -20,10 +18,10 @@
 
 body {
   margin: 0;
-  font-family: "Newsreader", Georgia, serif;
-  background: radial-gradient(circle at 10% 10%, #ffe9c8, transparent 55%),
-    radial-gradient(circle at 80% 20%, #d2f4ea, transparent 45%),
-    linear-gradient(180deg, var(--paper) 0%, #fef0df 45%, #f7efe7 100%);
+  font-family: "Lexend", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at 15% 15%, #fff7ee 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, #f2e3cf 0%, transparent 45%),
+    linear-gradient(180deg, var(--paper) 0%, #f2e4d5 55%, #f7efe7 100%);
   color: var(--ink);
   min-height: 100vh;
   line-height: 1.6;
@@ -51,26 +49,26 @@ img {
   z-index: 0;
 }
 
-.glow {
+.halo {
   position: fixed;
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  filter: blur(40px);
+  filter: blur(50px);
   opacity: 0.45;
   z-index: 0;
 }
 
-.glow-left {
-  background: radial-gradient(circle, #ffd8aa 0%, transparent 70%);
-  top: -120px;
+.halo-1 {
+  top: -160px;
   left: -120px;
+  background: radial-gradient(circle, #f3d7b5 0%, transparent 70%);
 }
 
-.glow-right {
-  background: radial-gradient(circle, #bfece1 0%, transparent 70%);
-  bottom: -160px;
+.halo-2 {
+  bottom: -180px;
   right: -120px;
+  background: radial-gradient(circle, #d4e3dc 0%, transparent 70%);
 }
 
 .site-header {
@@ -79,37 +77,35 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 7vw 12px;
+  padding: 28px 7vw 14px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .logo {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.02em;
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
 }
 
 .site-nav {
   display: flex;
   align-items: center;
   gap: 22px;
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
   font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .site-nav a {
   color: var(--ink-soft);
-  font-size: 0.95rem;
 }
 
 .nav-cta {
-  padding: 10px 16px;
+  padding: 10px 18px;
   border-radius: 999px;
   background: var(--ink);
-  color: #fff;
-  font-size: 0.9rem;
+  color: var(--paper);
 }
 
 main {
@@ -120,39 +116,38 @@ main {
 .hero {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 48px;
+  gap: 50px;
   align-items: center;
-  padding: 52px 7vw 80px;
+  padding: 56px 7vw 80px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
-.kicker {
+.eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.35em;
-  font-size: 0.7rem;
-  color: var(--sage);
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  color: var(--olive);
 }
 
 .hero h1 {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  font-size: clamp(2.6rem, 3.6vw, 4rem);
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: clamp(2.8rem, 4.2vw, 4.6rem);
   line-height: 1.05;
-  margin: 16px 0;
+  margin: 18px 0 16px;
 }
 
 .lead {
   font-size: 1.1rem;
   color: var(--ink-soft);
-  max-width: 480px;
+  max-width: 520px;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin: 28px 0 20px;
+  margin: 28px 0 18px;
 }
 
 .button {
@@ -161,17 +156,16 @@ main {
   justify-content: center;
   padding: 12px 22px;
   border-radius: 999px;
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.02em;
   border: 1px solid transparent;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button.primary {
-  background: var(--coral);
+  background: var(--clay);
   color: #fff;
-  box-shadow: 0 12px 30px rgba(255, 122, 89, 0.25);
+  box-shadow: 0 14px 30px rgba(199, 107, 79, 0.22);
 }
 
 .button.ghost {
@@ -181,176 +175,203 @@ main {
 
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(15, 10, 20, 0.12);
+  box-shadow: 0 16px 32px rgba(21, 12, 8, 0.14);
 }
 
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  font-size: 0.9rem;
-  color: var(--sage);
+  font-size: 0.92rem;
+  color: var(--olive);
 }
 
-.hero-art {
+.hero-visual {
   position: relative;
+  min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 420px;
 }
 
-.orbit {
+.sunburst {
   position: absolute;
-  border-radius: 50%;
-  border: 1px dashed rgba(59, 107, 97, 0.2);
-  animation: float 10s ease-in-out infinite;
-}
-
-.orbit-1 {
   width: 320px;
   height: 320px;
-  top: 40px;
-  left: 20px;
-  animation-delay: -1s;
-}
-
-.orbit-2 {
-  width: 220px;
-  height: 220px;
-  bottom: 40px;
-  right: 20px;
-  animation-delay: -3s;
-}
-
-.device {
-  width: 280px;
-  background: var(--glass);
-  border-radius: 32px;
-  box-shadow: 0 30px 60px rgba(24, 16, 28, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  overflow: hidden;
-}
-
-.device-header {
-  display: flex;
-  gap: 6px;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
-  background: rgba(59, 107, 97, 0.4);
+  background: radial-gradient(circle, rgba(230, 182, 106, 0.4) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -160px;
+  animation: pulse 8s ease-in-out infinite;
 }
 
-.device-content {
-  padding: 20px;
+.panel {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 40px rgba(21, 12, 8, 0.12);
+  border: 1px solid rgba(31, 20, 14, 0.08);
+  padding: 18px 20px;
+  backdrop-filter: blur(8px);
 }
 
-.device-title {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
+.panel-main {
+  width: 280px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.device-pill {
-  margin: 14px 0 18px;
-  padding: 6px 14px;
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-body {
+  display: grid;
+  gap: 10px;
+}
+
+.pill {
+  padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(255, 208, 138, 0.6);
-  font-size: 0.85rem;
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-}
-
-.device-card {
-  border-radius: 18px;
-  padding: 14px 16px;
-  background: #fff;
-  box-shadow: 0 10px 24px rgba(15, 10, 20, 0.08);
-  margin-bottom: 12px;
-}
-
-.device-card.alt {
-  background: rgba(99, 214, 192, 0.18);
-}
-
-.device-card .label {
-  font-size: 0.75rem;
+  background: rgba(47, 86, 79, 0.12);
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--sage);
-  margin: 0 0 4px;
+  color: var(--olive);
 }
 
-.device-card .value {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.device-card .sub {
-  font-size: 0.85rem;
+.time {
+  font-size: 0.9rem;
   color: var(--ink-soft);
-  margin: 4px 0 0;
 }
 
-.floating-card {
-  position: absolute;
+.panel-title {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.2rem;
+  margin: 0 0 12px;
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.panel-row.muted {
+  color: var(--ink-soft);
+}
+
+.panel-note {
+  width: 200px;
+  top: 20px;
+  right: 10px;
+  background: rgba(255, 247, 238, 0.95);
+  transform: rotate(-3deg);
+}
+
+.panel-note p {
+  margin: 0 0 8px;
+  font-family: "Fraunces", "Times New Roman", serif;
+}
+
+.panel-note span {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.panel-stack {
+  width: 210px;
   bottom: 10px;
-  left: -20px;
-  padding: 10px 16px;
-  background: var(--paper-strong);
-  border-radius: 999px;
+  left: 20px;
+  transform: rotate(2deg);
+  background: rgba(239, 226, 211, 0.85);
+}
+
+.stack-top {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stack-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
   font-size: 0.85rem;
-  box-shadow: 0 14px 28px rgba(15, 10, 20, 0.1);
-  animation: float 8s ease-in-out infinite;
+}
+
+.stack-list span {
+  background: rgba(31, 20, 14, 0.08);
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 0 7vw 70px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.metric {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: 0 12px 24px rgba(21, 12, 8, 0.08);
+}
+
+.metric-value {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.6rem;
 }
 
 .band {
-  padding: 72px 7vw;
+  padding: 70px 7vw;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .section-head h2 {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  font-family: "Fraunces", "Times New Roman", serif;
   font-size: clamp(2rem, 3vw, 2.8rem);
   margin-bottom: 12px;
 }
 
 .section-head p {
-  max-width: 560px;
+  max-width: 600px;
   color: var(--ink-soft);
 }
 
-.card-grid {
+.ritual-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 22px;
   margin-top: 32px;
 }
 
-.info-card {
-  padding: 22px 20px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 18px 40px rgba(15, 10, 20, 0.08);
+.ritual-card {
+  padding: 22px 22px 26px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 18px 30px rgba(21, 12, 8, 0.08);
 }
 
-.info-card h3 {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+.ritual-card h3 {
   margin-top: 0;
-  margin-bottom: 8px;
+  font-family: "Fraunces", "Times New Roman", serif;
 }
 
-.flow {
+.story {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 40px;
-  margin: 0 auto;
 }
 
 .steps {
@@ -362,52 +383,108 @@ main {
 .step {
   display: grid;
   grid-template-columns: 80px minmax(0, 1fr);
-  gap: 18px;
+  gap: 16px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 12px 30px rgba(15, 10, 20, 0.06);
+  box-shadow: 0 14px 24px rgba(21, 12, 8, 0.06);
 }
 
-.step-number {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+.step-index {
+  font-family: "Fraunces", "Times New Roman", serif;
   font-size: 1.6rem;
-  color: var(--coral);
+  color: var(--clay);
 }
 
 .step h4 {
   margin: 0 0 6px;
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  font-family: "Fraunces", "Times New Roman", serif;
 }
 
-.privacy-grid {
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: center;
+}
+
+.split-copy h2 {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: var(--ink-soft);
+}
+
+.checklist li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--clay);
+  font-weight: 600;
+}
+
+.split-card {
+  padding: 26px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 30px rgba(21, 12, 8, 0.08);
+}
+
+.quote {
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+}
+
+.quote-name {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.faq-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   margin-top: 28px;
 }
 
-.privacy-card {
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid rgba(59, 107, 97, 0.15);
-  background: rgba(255, 255, 255, 0.65);
+.faq-item {
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 14px 24px rgba(21, 12, 8, 0.06);
+}
+
+.faq-item h4 {
+  margin-top: 0;
+  font-family: "Fraunces", "Times New Roman", serif;
 }
 
 .cta {
   padding: 90px 7vw 100px;
 }
 
-.cta-inner {
-  background: linear-gradient(120deg, rgba(255, 122, 89, 0.12), rgba(99, 214, 192, 0.18));
-  border-radius: 40px;
-  padding: 48px;
+.cta-card {
   text-align: center;
-  box-shadow: 0 18px 40px rgba(15, 10, 20, 0.08);
+  padding: 48px 32px;
+  border-radius: 40px;
+  background: linear-gradient(120deg, rgba(199, 107, 79, 0.12), rgba(47, 86, 79, 0.12));
+  box-shadow: 0 20px 40px rgba(21, 12, 8, 0.1);
 }
 
-.cta-inner h2 {
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+.cta-card h2 {
+  font-family: "Fraunces", "Times New Roman", serif;
   margin-top: 0;
 }
 
@@ -430,7 +507,7 @@ main {
 .footer-links {
   display: flex;
   gap: 18px;
-  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  font-weight: 500;
 }
 
 .reveal {
@@ -444,17 +521,17 @@ main {
   transform: translateY(0);
 }
 
-@keyframes float {
+@keyframes pulse {
   0%,
   100% {
-    transform: translateY(0);
+    transform: scale(1);
   }
   50% {
-    transform: translateY(-10px);
+    transform: scale(1.04);
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .site-header {
     flex-direction: column;
     gap: 16px;
@@ -470,12 +547,15 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .hero-art {
+  .hero-visual {
     order: -1;
+    margin-bottom: 12px;
   }
 
-  .card-grid,
-  .privacy-grid {
+  .metrics,
+  .ritual-grid,
+  .faq-grid,
+  .split {
     grid-template-columns: 1fr;
   }
 }
@@ -494,7 +574,12 @@ main {
     padding: 40px 6vw 60px;
   }
 
-  .cta-inner {
+  .panel-note,
+  .panel-stack {
+    display: none;
+  }
+
+  .cta-card {
     padding: 32px 24px;
   }
 
