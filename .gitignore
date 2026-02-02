@@ -4,6 +4,10 @@
 fastlane/build
 fastlane/report.xml
 fastlane/test_output
+fastlane/.env
+
+# env
+.env
 
 # Xcode
 DerivedData
