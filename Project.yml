@@ -6,9 +6,13 @@ options:
   xcodeVersion: "15.0"
 settings:
   base:
-    DEVELOPMENT_TEAM: ""
+    DEVELOPMENT_TEAM: 4754Y2K7H2
     CURRENT_PROJECT_VERSION: 1
     MARKETING_VERSION: 0.1.0
+  configs:
+    Release:
+      CODE_SIGN_STYLE: Manual
+      CODE_SIGN_IDENTITY: "Apple Distribution"
 
 schemes:
   Selah:
@@ -32,6 +36,12 @@ targets:
   Selah:
     type: application
     platform: iOS
+    settings:
+      configs:
+        Release:
+          PROVISIONING_PROFILE_SPECIFIER: "match AppStore com.goodstack.Selah"
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+          CODE_SIGN_STYLE: Manual
     sources:
       - path: Sources/Selah
       - path: Sources/Shared
@@ -80,6 +90,11 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.goodstack.Selah.ShieldExtension
+      configs:
+        Release:
+          PROVISIONING_PROFILE_SPECIFIER: "match AppStore com.goodstack.Selah.ShieldExtension"
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+          CODE_SIGN_STYLE: Manual
     sources:
       - path: Sources/SelahShieldExtension
       - path: Sources/Shared
@@ -99,6 +114,11 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.goodstack.Selah.DeviceActivityExtension
+      configs:
+        Release:
+          PROVISIONING_PROFILE_SPECIFIER: "match AppStore com.goodstack.Selah.DeviceActivityExtension"
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+          CODE_SIGN_STYLE: Manual
     sources:
       - path: Sources/SelahDeviceActivityExtension
       - path: Sources/Shared
