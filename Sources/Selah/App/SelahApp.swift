@@ -5,6 +5,7 @@ import SwiftData
 struct SelahApp: App {
     @StateObject private var screenTimeManager = ScreenTimeManager()
     @StateObject private var templateStore = PrayerTemplateStore()
+    @StateObject private var readingStore = ReadingStore()
 
     private var container: ModelContainer = {
         let schema = Schema([UserProfile.self, PrayerEvent.self])
@@ -21,6 +22,7 @@ struct SelahApp: App {
             ContentView()
                 .environmentObject(screenTimeManager)
                 .environmentObject(templateStore)
+                .environmentObject(readingStore)
                 .task {
                     await screenTimeManager.bootstrap()
                 }

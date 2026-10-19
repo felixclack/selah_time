@@ -27,4 +27,18 @@ enum PrayerStats {
     static func streakCount(events: [PrayerEvent], now: Date = Date(), calendar: Calendar = .current) -> Int {
         streakCount(eventDates: events.map { $0.timestamp }, now: now, calendar: calendar)
     }
+
+    /// The last seven days ending today, oldest first, with whether each had a completed pause.
+    static func weekActivity(eventDates: [Date], now: Date = Date(), calendar: Calendar = .current) -> [(day: Date, active: Bool)] {
+        let daysWithEvents = Set(eventDates.map { calendar.startOfDay(for: $0) })
+        let today = calendar.startOfDay(for: now)
+        return (0..<7).reversed().compactMap { offset in
+            guard let day = calendar.date(byAdding: .day, value: -offset, to: today) else { return nil }
+            return (day: day, active: daysWithEvents.contains(day))
+        }
+    }
+
+    static func weekActivity(events: [PrayerEvent], now: Date = Date(), calendar: Calendar = .current) -> [(day: Date, active: Bool)] {
+        weekActivity(eventDates: events.map { $0.timestamp }, now: now, calendar: calendar)
+    }
 }

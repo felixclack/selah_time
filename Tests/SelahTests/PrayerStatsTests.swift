@@ -46,6 +46,20 @@ final class PrayerStatsTests: XCTestCase {
         XCTAssertEqual(streak, 1)
     }
 
+    func testWeekActivityMarksDaysWithPauses() {
+        let now = date("2026-01-30T12:00:00Z")
+        let events = [
+            date("2026-01-30T08:00:00Z"),
+            date("2026-01-28T10:00:00Z"),
+            date("2026-01-20T10:00:00Z")
+        ]
+
+        let week = PrayerStats.weekActivity(eventDates: events, now: now, calendar: calendar)
+        XCTAssertEqual(week.count, 7)
+        XCTAssertEqual(week.map(\.active), [false, false, false, false, true, false, true])
+        XCTAssertEqual(week.last?.day, date("2026-01-30T00:00:00Z"))
+    }
+
     private func date(_ iso: String) -> Date {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]

@@ -44,6 +44,8 @@
 		D559AC88F11E3706863DD8C5 /* SelahShieldExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0828030AD91DF56B3E0F0FC /* SelahShieldExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E149BFFF2127CB49592910AD /* PrayerFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96DD84CB2C33B5F0F30834 /* PrayerFlowView.swift */; };
 		E21277A8D84E07B727B3ADEC /* PrayerTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C42C8975AC8ED7B9063FB23 /* PrayerTemplates.json */; };
+		B2C3D4E5F60718293A4B5C6D /* Readings.json in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* Readings.json */; };
+		C3D4E5F60718293A4B5C6D7E /* Readings.json in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* Readings.json */; };
 		E43C1FB92C2305F64C9490A5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512C369E1E46F7E4767B27A /* UserProfile.swift */; };
 		E451D51DAB7DB3D545917991 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1512C369E1E46F7E4767B27A /* UserProfile.swift */; };
 		EADAEEDB8F6EC91026BEE406 /* PrayerTemplates.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C42C8975AC8ED7B9063FB23 /* PrayerTemplates.json */; };
@@ -96,6 +98,7 @@
 		1F172B32AE2A3522345BE22A /* PrayerStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerStatsTests.swift; sourceTree = "<group>"; };
 		284BDF5502A59185616FF2A2 /* SelahTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelahTheme.swift; sourceTree = "<group>"; };
 		2C42C8975AC8ED7B9063FB23 /* PrayerTemplates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PrayerTemplates.json; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* Readings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Readings.json; sourceTree = "<group>"; };
 		3690770FDB0299C8CB90D661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3FE1481E1FBDF1C660846EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		40DD4F97E14765B7710AE160 /* PrayerHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerHistoryView.swift; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				2C42C8975AC8ED7B9063FB23 /* PrayerTemplates.json */,
+				A1B2C3D4E5F60718293A4B5C /* Readings.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -416,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E21277A8D84E07B727B3ADEC /* PrayerTemplates.json in Resources */,
+				B2C3D4E5F60718293A4B5C6D /* Readings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADAEEDB8F6EC91026BEE406 /* PrayerTemplates.json in Resources */,
+				C3D4E5F60718293A4B5C6D7E /* Readings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

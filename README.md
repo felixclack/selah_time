@@ -1,6 +1,6 @@
 # Selah
 
-Selah is an iOS 17+ SwiftUI app that pauses selected apps using Screen Time and asks for a short prayer before each unlock.
+Selah is an iOS 17+ SwiftUI app that pauses selected apps using Screen Time and asks for a short pause with God before each unlock: a prayer, or a short passage of Scripture.
 
 ## Requirements
 - Xcode 15+
@@ -24,6 +24,8 @@ Selah is an iOS 17+ SwiftUI app that pauses selected apps using Screen Time and 
 ## Notes
 - No network calls in the MVP.
 - Prayer templates live in `Sources/Selah/Resources/PrayerTemplates.json`.
+- Scripture readings (KJV, public domain) live in `Sources/Selah/Resources/Readings.json` and are read in order.
+- The visual style (paper/ink/clay palette, serif scripture) lives in `Sources/Selah/Style/SelahTheme.swift` and matches the landing page in `docs/`.
 - Screen Time shielding is applied using `FamilyControls`, `ManagedSettings`, and `DeviceActivity`.
 
 ## Acceptance checklist

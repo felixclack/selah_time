@@ -14,9 +14,10 @@ struct ContentView: View {
                 OnboardingFlowView()
             }
         }
-        .tint(SelahPalette.accent)
+        .tint(SelahPalette.clay)
         .onOpenURL { url in
-            guard url.scheme == "selah" else { return }
+            // While apps are already open, a new pause isn't needed; the dashboard shows the time left.
+            guard url.scheme == "selah", !profiles.isEmpty, !screenTimeManager.isUnlockActive else { return }
             showPrayerFlow = true
         }
         .fullScreenCover(isPresented: $showPrayerFlow) {
