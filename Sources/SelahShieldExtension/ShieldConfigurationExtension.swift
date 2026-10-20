@@ -23,7 +23,7 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let paper = dynamic(light: 0xF8F2EA, dark: 0x16110E)
         let ink = dynamic(light: 0x1F140E, dark: 0xF3EAE0)
         let inkSoft = dynamic(light: 0x6B5A4E, dark: 0xB7A797)
-        let clay = UIColor(red: 0.75, green: 0.38, blue: 0.25, alpha: 1)
+        let clay = UIColor(red: 0.66, green: 0.31, blue: 0.18, alpha: 1)
 
         let icon = UIImage(systemName: "hands.and.sparkles")?
             .withConfiguration(UIImage.SymbolConfiguration(pointSize: 44, weight: .light))

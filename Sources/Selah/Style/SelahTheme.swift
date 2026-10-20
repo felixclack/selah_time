@@ -11,7 +11,7 @@ enum SelahPalette {
     static let ink = Color(light: 0x1F140E, dark: 0xF3EAE0)
     static let inkSoft = Color(light: 0x6B5A4E, dark: 0xB7A797)
     static let hairline = Color(light: 0x1F140E, dark: 0xF3EAE0, opacity: 0.10)
-    static let clay = Color(light: 0xC0623F, dark: 0xE38D6C)
+    static let clay = Color(light: 0xA9502F, dark: 0xE38D6C)
     static let olive = Color(light: 0x2F564F, dark: 0x86B6AA)
     static let gold = Color(light: 0xD9A24E, dark: 0xE6B66A)
     static let onAccent = Color(light: 0xFFFBF6, dark: 0x16110E)
@@ -157,10 +157,10 @@ struct SelahPrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.selahButton(17))
-            .foregroundStyle(SelahPalette.onAccent)
+            .foregroundStyle(isEnabled ? SelahPalette.onAccent : SelahPalette.inkSoft)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 17)
-            .background(SelahPalette.ink.opacity(isEnabled ? 1 : 0.25), in: Capsule())
+            .background(isEnabled ? SelahPalette.ink : SelahPalette.ink.opacity(0.08), in: Capsule())
             .scaleEffect(configuration.isPressed ? 0.98 : 1)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
     }

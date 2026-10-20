@@ -164,7 +164,7 @@ struct DashboardView: View {
                         VStack(spacing: 8) {
                             Circle()
                                 .fill(entry.active ? SelahPalette.clay : Color.clear)
-                                .overlay(Circle().stroke(entry.active ? Color.clear : SelahPalette.hairline, lineWidth: 1.5))
+                                .overlay(Circle().stroke(entry.active ? Color.clear : SelahPalette.ink.opacity(0.25), lineWidth: 1.5))
                                 .frame(width: 14, height: 14)
                             Text(entry.day.formatted(.dateTime.weekday(.narrow)))
                                 .font(.selahLabel(12))
